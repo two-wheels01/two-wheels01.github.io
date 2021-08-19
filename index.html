@@ -1,10 +1,152 @@
- <!DOCTYPE html>
-<html>
-<title>HTML Tutorial</title>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Steffen's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hi, I'm Steffen</h1>
+      <h2>Junior Full-Stack Web Developer</h2>
+      <h3><a href="https://github.com/two-wheels01">github.com/two-wheels01</a><span>steffen.kludt@mailbox.org</span></h3>
+      
+    </div>
+    <ul class="nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+    <div class="body">
+      <div id="about">
+        <h1>About Me</h1>
+        <p class="about">
+          Junior full-stack web developer with
+          prior experience in the tech industry and
+          the ambition to create meaningful digital
+          products and services.
+          Conﬁdent with both frontend and backend implementations, seeking to deploy
+          my skills in a challenging environment.<br>
+          Let’s build something great, together!
+        </p>
+        <br />
+      </div>
+      <div id="projects">
+        <h1>Projects</h1>
+        <section class="basic-grid">
+          <div>
+            <div class="projectTitle">Games Review API (Backend)</div>
+            <div class="projectBody">
+              <a
+                href="https://github.com/two-wheels01/games-review-API/blob/main/README.md"
+                target="_blank"
+              >
+                <img src="images/GamesReviewAPI.png" alt="API Response" />
+              </a>
+            </div>
+            <div class="projectDescription">
+              A RESTful API giving access to board game reviews and related information such as comments and users, a project to mimic the building of a real world backend service which provides the information to the frontend architecture.
+              <br />
+              <br>
+              <p><b>Tech Stack</b>
+                <ul class="tech">
+                <li>Web Application: <b>express.js</b> </li>
+                <li>Database Interaction: <b>node-postgres</b>  </li>
+                <li>Testing: <b>jest</b> </li>
+                <li>Hosting: <b>Heroku</b> </li>
+              </ul>
+              </p>
+              <p><b>Links</b>
+                <ul class="tech">
+                <li><a href="https://github.com/two-wheels01/games-review-API" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://be-nc-games-sk.herokuapp.com/api" target="_blank">Heroku Hosting</a></li>
+              </ul>
+              </p>
+            </div>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+          </div>
+          <div>
+            <div class="projectTitle">Noughts & Crosses (Frontend)</div>
+            <div class="projectBody">
+              <a
+              href="https://noughts-and-crosses-sk.netlify.app/"
+              target="_blank"
+            >
+              <img src="images/NoughtsAndCrosses.png" alt="API Response" />
+            </a>
+            </div>
+            <div class="projectDescription">
+              A simple version of Noughts & Crosses (Tic-Tac-Toe) built with React, designed to work on both laptops and mobile devices, 
+              <br />
+              <br>
+              <p><b>Technologies</b>
+                <ul class="tech">
+                <li>Framework: <b>React.js</b> </li>
+                <li>Hosting: <b>Netlify</b> </li>
+              </ul>
+              </p>
+              <p><b>Links</b>
+                <ul class="tech">
+                <li><a href="https://github.com/two-wheels01/games-review-API" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://noughts-and-crosses-sk.netlify.app/" target="_blank">Netlify Hosting</a></li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="projectTitle">Cookeroo (Web Application)</div>
+            <div class="projectBody">               <iframe width="420" height="315"
+              src="https://www.youtube.com/watch?v=1lGdSrrptkI">
+              </iframe> 
+            </div>
+            <div class="projectDescription">
+              Cookeroo, my final coding bootcamp project at Northcoders. It's a web application and online recipe book, into which recipes can be imported via a third party API, edited, refined and then viewed in an interactive way.
+              User and recipe data is stored in a non-relational database (mongoDB), which is managed by an API we built ourselves.
+              <br />
+              <br>
+              <p><b>Technologies</b>
+                <ul class="tech">
+                <li>Frontend Framework: <b>Svelte</b> </li>
+                <li>API requests: <b>axios</b>  </li>
+                <li>Authentication: <b>auth0</b> </li>
+                <li>Database: <b>mongoDB</b> </li>
+                <li>Hosting: <b>Heroku</b> </li>
+                <li>Testing: <b>Jest</b> </li>
+              </ul>
+              </p>
+              <p><b>Links</b>
+                <ul class="tech">
+                <li><a href="https://github.com/two-wheels01/recipe-book-FE/blob/main/README.md" target="_blank">GitHub Repository (FE)</a></li>
+                <li><a href="https://github.com/two-wheels01/recipe-book-BE/blob/main/README.md" target="_blank">GitHub Repository (BE)</a></li>
+                <li><a href="https://youtu.be/1lGdSrrptkI?t=11" target="_blank">Presentation (YouTube)</a></li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <div id="contact">
+        <h1>Contact</h1>
+        <p>I'm on GitHub, you can find me <a href="https://github.com/two-wheels01" target=_blank><b>HERE</b></a>.</p>
+        <br>
+        <p>If you have just questions, feel free to fill in the contact form below and I'll get back to you!
+        </p>
+        <br>
+        <div class="container">
+          <form action="action_page.php">
+        
+            <input type="text" id="namea" name="name" placeholder="Name">
+        
+            <input type="text" id="email" name="email" placeholder="Email">
+        
+            <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div> 
 
-</body>
-</html> 
+      </div> -->
+    </div>
+  </body>
+</html>

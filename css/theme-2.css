@@ -18,8 +18,8 @@
   --bs-white: #fff;
   --bs-gray: #767676;
   --bs-gray-dark: #434343;
-  --bs-primary: #7e1010;
-  --bs-primary-darker: #570c0c;
+  --bs-primary: #0C7C59;
+  --bs-primary-darker: #08573e;
   --bs-secondary: #4f4f4f;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -10084,7 +10084,7 @@ a.theme-link {
 a.theme-link:hover {
   color: var(--bs-primary);
   -webkit-text-decoration-color: rgba(91, 195, 213, 0.8);
-  text-decoration-color: rgba(91, 195, 213, 0.8);
+  text-decoration-color: var(--bs-primary);
 }
 .single-col-max-width {
   max-width: 820px;

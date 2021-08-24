@@ -50,6 +50,9 @@ app.post('/send', (req, res) => {
 
     //2. You can configure the object however you want
     const mail = {
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+    }
       from: data.name,
       to: process.env.EMAIL,
       subject: data.subject,

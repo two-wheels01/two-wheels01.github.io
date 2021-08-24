@@ -7,6 +7,14 @@ require('dotenv').config();
 // instantiate an express app
 const app = express();
 app.use(cors({ origin: '*' }));
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
 
 //make the contact page the the first page on the app
 app.route('/').get(function (req, res) {
@@ -50,9 +58,6 @@ app.post('/send', (req, res) => {
 
     //2. You can configure the object however you want
     const mail = {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
       from: data.name,
       to: process.env.EMAIL,
       subject: data.subject,

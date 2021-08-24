@@ -16,11 +16,10 @@ const sendMail = (mail) => {
   //1.
   fetch('https://github.com/two-wheels01/two-wheels01.github.io/send', {
     method: 'post', //2.
-    mode: 'same-origin',
     body: mail, //3.
     headers: {
-      'Access-Control-Allow-Origin': '*',
-    },
+        'Access-Control-Allow-Origin': '*',
+      }
   }).then((response) => {
     return response.json();
   });

@@ -18,7 +18,7 @@
   --bs-white: #fff;
   --bs-gray: #767676;
   --bs-gray-dark: #434343;
-  --bs-primary: #0C7C59;
+  --bs-primary: #0c7c59;
   --bs-primary-darker: #08573e;
   --bs-secondary: #4f4f4f;
   --bs-success: #198754;
@@ -11565,4 +11565,9 @@ body {
   text-align: center;
   margin-bottom: 1rem;
   font-weight: bold;
+}
+
+.tech-tag {
+  border-radius: 5px;
+  border: 1px solid #767676;
 }

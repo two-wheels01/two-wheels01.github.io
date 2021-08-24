@@ -418,7 +418,7 @@
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="css/theme-2.css" />
 
-    <style></style>
+    <script src="js/index.js" defer></script> 
   </head>
 
   <body>
@@ -854,11 +854,56 @@
             id="contact-form"
             class="contact-form col-lg-8 mx-lg-auto"
             method="post"
-            action=""
+            action="send"
+            enctype = "multipart/form-data"
           >
             <h3 class="text-center mb-3">Get In Touch</h3>
-            <div class="mb-4">Got a question or just want to say hi? Just send me an email to <a  href="mailto:s.kludt@mailbox.org">s.kludt@mailbox.org</a>.</div>
-      
+            <div class="mb-4">Got a question or just want to say hi? You can fill in the contact form below or send me an email to <a  href="mailto:#">s.kludt@mailbox.org</a>.</div>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="sr-only" for="cname">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cname"
+                  name="name"
+                  placeholder="Name"
+                  minlength="2"
+                  required=""
+                  aria-required="true"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="sr-only" for="cemail">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="cemail"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                  aria-required="true"
+                />
+              </div>
+            
+              <div class="col-12">
+                <label class="sr-only" for="cmessage">Your message</label>
+                <textarea
+                  class="form-control"
+                  id="cmessage"
+                  name="message"
+                  placeholder="Enter your message"
+                  rows="5"
+                  required=""
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <div class="form-group col-12">
+                <button type="submit" value="submit" class="btn btn-block btn-primary py-2">
+                  Send Now
+                </button>
+              </div>
+            </div>
             <!--//form-row-->
           </form>
         </div>

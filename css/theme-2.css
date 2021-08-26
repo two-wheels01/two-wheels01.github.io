@@ -2797,17 +2797,17 @@ fieldset:disabled .btn {
   border-color: var(--bs-primary);
 }
 .btn-primary:hover {
-  color: #000;
+  /* color: #000; */
   background-color: var(--bs-primary-darker);
   /* border-color: #6bc9d9; */
 }
-.btn-check:focus + .btn-primary,
+/* .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #000;
   background-color: var(--bs-primary-darker);
-  /* border-color: #6bc9d9; */
+  border-color: #6bc9d9;
   box-shadow: 0 0 0 0.25rem rgba(77, 166, 181, 0.5);
-}
+} */
 .btn-check:checked + .btn-primary,
 .btn-check:active + .btn-primary,
 .btn-primary:active,
@@ -11570,4 +11570,5 @@ body {
 .tech-tag {
   border-radius: 5px;
   border: 1px solid #767676;
+  padding: 0.15rem !important;
 }

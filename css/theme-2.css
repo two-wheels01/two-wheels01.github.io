@@ -10962,7 +10962,7 @@ a.resume-link:hover {
   font-size: 1rem;
 }
 .resume-education-list,
-.resume-awards-list {
+.resume-a              ds-list {
   font-size: 0.875rem;
 }
 .resume-degree-time-org,

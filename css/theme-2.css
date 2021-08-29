@@ -10339,7 +10339,7 @@ textarea.form-control {
   }
 }
 .social-list a:hover {
-  color: #34b3c9;
+  color: var(--bs-primary-darker);
   background-color: rgba(255, 255, 255, 0.8);
 }
 .main-wrapper {
